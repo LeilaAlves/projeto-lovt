@@ -1,0 +1,84 @@
+* {
+    box-sizing:border-box;
+}
+
+a {
+  text-decoration:none;
+  transition:color 1s;
+  transition-duration: 2s;
+}
+
+a:hover {
+    color:lightslategrey;
+    opacity:50%;
+    transition-property: color;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family:'Ropa Sans', sans-serif;
+  color:#777777;
+}
+
+header {
+    top: 0px;
+    background-color:#ffffff;
+    margin-left:0px;
+    border:1px;
+    box-shadow: 0px 2px 10px darkgray;
+    position: sticky;
+}
+
+h1 {
+    width: fit-content;
+    top: 8px;
+    position:relative;
+    left:44px;
+    text-transform:uppercase;
+    font-weight: 400;
+    font-size: 50px;
+    margin:0%;
+    vertical-align: top;
+}
+
+#slogan {
+    width: fit-content;
+    top: 8px;
+    position:relative;
+    left: 180px;
+    color:#AAAAAA;
+    font-size: 18px;
+    
+    
+}
+
+main{
+    padding-bottom: 40px;
+}
+
+#foto1 {
+    width: 100%;
+
+}
+
+h2, .estilosArc {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer {
+    background:#333333;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.socialmidia img + img {
+    margin-left: 18px;
+
+
+}
