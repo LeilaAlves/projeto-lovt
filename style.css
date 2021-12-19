@@ -62,21 +62,28 @@ h1 {
     
 }
 
-.casaUm + p {
+.casaUm + .casaDois {
     display: flex;
     border: 10px;
     background-size: 20px;
     background-color: #EEEEEE;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 30px;
+    box-sizing:border-box;
+    column-gap: 1.5rem;
 
 }
 
-.casaUm p {
-    display:contents;
+/* .casaUm p {
+    display:grid;
     text-align:justify;
-}
+} */
 
 
-.casaDois {
+/* .casaDois {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -84,6 +91,11 @@ h1 {
     padding: 30px;
     box-sizing:border-box;
 }
+
+.casaDois {
+    display:grid;
+    text-align:justify;
+} */
 
 h2, .estilosArq {
     width: fit-content;
@@ -97,16 +109,18 @@ h2, .estilosArq {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background:#333333;
     width: 100%;
     position: relative;
     top:57px;
 }
 
-footer p {
+/* footer p {
     font-size: 12px;
     text-align: justify;
-}
+} */
 
 .socialmidia img + img {
     margin-left: 18px;
