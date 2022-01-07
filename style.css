@@ -4,6 +4,7 @@
 }
 
 a {
+  color:#777777;
   text-decoration:none;
   transition-duration: 2s;
   transition-delay: 1.5s;
@@ -11,7 +12,7 @@ a {
 }
 
 a:hover {
-    color:lightslategrey;
+    color:rgb(145, 157, 168);
     opacity:50%;
     transition-property: color;
 }
@@ -164,9 +165,7 @@ h2{
     flex-direction: column;
     margin-left: 60px;
     margin-right: 60px;
-    background-size: 100%;
-
-    
+    background-size: 100%;    
 }
 
 #ind #mod #cla {
@@ -201,15 +200,3 @@ h2{
 .socialmidia {
     margin: 50px auto;
 }
-
-/* @media (max-width: 1301px){
-    .casaUm, .casaDois {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1301px){
-    .casaUm, .casaDois {
-        width: 460px;
-    }
-} */
