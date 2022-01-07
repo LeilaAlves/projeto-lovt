@@ -1,11 +1,13 @@
 * {
     box-sizing:border-box;
+    
 }
 
 a {
   text-decoration:none;
-  transition:color 1s;
   transition-duration: 2s;
+  transition-delay: 1.5s;
+  transition-property: color;
 }
 
 a:hover {
@@ -15,17 +17,21 @@ a:hover {
 }
 
 body {
-  width: 100%;
-  margin: 0 auto;
   font-family:'Ropa Sans', sans-serif;
   color:#777777;
+  background: 1301px;
+  margin: 0px;
 }
 
 header {
     background-color:#ffffff;
     box-shadow: 0px 2px 10px darkgray;
+    margin: 0px 0px 60px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     top:0px;
     width: 100%;
+    max-width: 100%;
     position: sticky;
     z-index: 10;
 }
@@ -54,74 +60,156 @@ h1 {
 }
 
 #foto1 {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    align-content: center;
+    width: 90%;
+    max-width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    padding: 0px;
+    position: relative;
+}
+
+.casas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+    border: 0px;
+    background-size: 100px;
     height: 100%;
-    margin: 0px auto;
-    padding: 30px;
+    width: 100%;
+    max-width: 100%;    
+    position: relative;
     
 }
 
-.casaUm + .casaDois {
+.casaUm, .casaDois {
     display: flex;
-    border: 10px;
-    background-size: 20px;
+    justify-content: flex-end;
+    flex-direction:column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align:justify;
+    font-size: 15px; 
     background-color: #EEEEEE;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    padding: 30px;
-    box-sizing:border-box;
-    column-gap: 1.5rem;
-
+    background-size: 100%;
+    width: 450px;
+    height: 370px;
+    max-width: 100%;
+    padding: 0px;
+    margin-bottom: 60px;
+    
 }
 
-/* .casaUm p {
-    display:grid;
-    text-align:justify;
-} */
-
-
-/* .casaDois {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    padding: 30px;
-    box-sizing:border-box;
+#textoUm, #textoDois {
+    margin: 15px;
 }
 
-.casaDois {
-    display:grid;
-    text-align:justify;
-} */
 
-h2, .estilosArq {
-    width: fit-content;
-    margin: 0 auto;
+#valorUm, #valorDois, #New, #Sale {
+    
+    border: 0px;
+    margin: 15px;
+    background-size: 100%;
+    
 }
 
-.estilosArq p {
-    z-index: 2;
-    position:relative;
-    background-size:cover;
+
+#New, #Sale {
+    order: 1;
+    border-radius: 50px;
+    background-color: #51D275;
+    width: 86px;
+    height: 41px;
+    margin: 15px;
+    left: -214px;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+    line-height:initial;
+    z-index: 11;
+             
 }
 
-footer {
+#Sale {
+    background-color: #DC9730;
+}
+
+#fotoCasaUm, #fotoCasaDois {
+    background-size: 100%;
+    margin: 0px 0px 9px 0px;
+    padding: 0px;
+    
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.estilosArq {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-size: 100%;
+
+    
+}
+
+#ind #mod #cla {
+    z-index: index 10;
+    background-size: center;
+    color:#FFFFFF;
+    box-align: center;
+    align-items: center; 
+}
+
+.divFooter {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background:#333333;
     width: 100%;
+    max-width: 100%;
     position: relative;
     top:57px;
+    
 }
 
-/* footer p {
-    font-size: 12px;
-    text-align: justify;
+.mapa {
+    
+    margin: 50px auto;
+    
+}
+
+.textofooter {
+    margin: 50px auto;
+}
+
+.socialmidia {
+    margin: 50px auto;
+}
+
+/* @media (max-width: 1301px){
+    .casaUm, .casaDois {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1301px){
+    .casaUm, .casaDois {
+        width: 460px;
+    }
 } */
-
-.socialmidia img + img {
-    margin-left: 18px;
-}
