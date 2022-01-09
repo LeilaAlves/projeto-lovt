@@ -4,17 +4,19 @@
 }
 
 a {
-  color:#777777;
+  color:#ffffff;
+  font-size: 25px;
   text-decoration:none;
   transition-duration: 2s;
-  transition-delay: 1.5s;
+  transition-delay: 0.5ms;
   transition-property: color;
 }
 
 a:hover {
-    color:rgb(145, 157, 168);
-    opacity:50%;
-    transition-property: color;
+    color:white;
+    font-size: xx-large;
+    opacity:80%;
+    transition-property:color;
 }
 
 body {
@@ -31,10 +33,11 @@ header {
     padding-left: 0px;
     padding-right: 0px;
     top:0px;
+    height: 5rem;
     width: 100%;
     max-width: 100%;
     position: sticky;
-    z-index: 10;
+    z-index: 9999;
 }
 
 h1 {
@@ -75,7 +78,6 @@ h1 {
 }
 
 .casas {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
@@ -89,32 +91,36 @@ h1 {
     
 }
 
+.casas, .casaUm, .casaDois{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .casaUm, .casaDois {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction:column-reverse;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    text-align:justify;
-    font-size: 15px; 
-    background-color: #EEEEEE;
-    background-size: 100%;
     width: 450px;
-    height: 370px;
-    max-width: 100%;
-    padding: 0px;
-    margin-bottom: 60px;
-    
+    background-color: #EEEEEE;
+}
+
+#fotoCasaUm, #fotoCasaDois {
+    width: 100%;
 }
 
 #textoUm, #textoDois {
     margin: 15px;
+    flex-wrap: wrap;
 }
 
 
-#valorUm, #valorDois, #New, #Sale {
-    
+#valorUm, #valorDois {
+    font-size: 25px;
     border: 0px;
     margin: 15px;
     background-size: 100%;
@@ -126,10 +132,13 @@ h1 {
     order: 1;
     border-radius: 50px;
     background-color: #51D275;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 86px;
     height: 41px;
     margin: 15px;
-    left: -214px;
+    right: 214px;
     color: #ffffff;
     border: none;
     text-align: center;
@@ -156,6 +165,8 @@ h1 {
 h2{
     display: flex;
     justify-content: center;
+    margin: 60px;
+    font-size: 40px;
 }
 
 
@@ -168,12 +179,36 @@ h2{
     background-size: 100%;    
 }
 
+
+.imageContainerInd, .imageContainerMod, .imageContainerCla {
+    position: relative;
+}
+
+
+.textoEstilosArq{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    
+}
+
+.imageSource{
+    width: 100%;
+    margin:20px;
+}
+
 #ind #mod #cla {
-    z-index: index 10;
+    font-size: x-large 25px;
+    z-index: 10;
     background-size: center;
-    color:#FFFFFF;
+    color:#c7c4c4;
     box-align: center;
-    align-items: center; 
+    align-items: center;
+     
 }
 
 .divFooter {
@@ -184,19 +219,15 @@ h2{
     max-width: 100%;
     position: relative;
     top:57px;
+    padding: 60px;
+    justify-items: center;
+    align-items: center;
     
 }
 
-.mapa {
-    
-    margin: 50px auto;
-    
-}
 
 .textofooter {
-    margin: 50px auto;
-}
-
-.socialmidia {
-    margin: 50px auto;
+    text-justify: distribute-all-lines;
+    text-align: justify;
+    
 }
